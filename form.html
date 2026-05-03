@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Donación - Protectora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Realizar Donación</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="animal">Selecciona el animal:</label>
+            <select id="animal" name="animal" required>
+                <option value="" disabled selected>-- Elige un amigo --</option>
+                <option value="boki">Boki</option>
+                <option value="capri">Capri</option>
+                <option value="chimi">Chimi</option>
+                <option value="cleo">Cleo</option>
+                <option value="coco">Coco</option>
+                <option value="goliath">Goliath</option>
+                <option value="gordito">Gordito</option>
+                <option value="malic">Malic</option>
+                <option value="mandy">Mandy</option>
+                <option value="sara">Sara</option>
+                <option value="trasto">Trasto</option>
+                <option value="wakame">Wakame</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cuenta">Cuenta Bancaria (IBAN):</label>
+            <input type="text"placeholder="ES00 0000 0000 0000 0000 0000" required>
+        </div>
+
+        <div class="form-group">
+            <label for="importe">Importe de la donación (€):</label>
+            <input type="number" id="importe" name="importe" min="1" step="0.01" placeholder="Ej: 20.00" required>
+        </div>
+
+        <button type="submit">Enviar Donación</button>
+    </form>
+</div>
+
+</body>
+</html>
