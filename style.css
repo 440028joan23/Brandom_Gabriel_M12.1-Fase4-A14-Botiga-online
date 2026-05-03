@@ -107,64 +107,135 @@ header {
   object-fit: cover;
   border-radius: 0;
 }
-.form-container {
-            background-color: #ffffff;
-            padding: 100px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 400px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            box-sizing: border-box;
-        }
-        h2 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
 
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #34495e;
-            font-weight: bold;
-        }
-        select, input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #27ae60;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+.form-container {
+  background-color: #ffffff;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e;
+  font-weight: bold;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el ancho */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
 button:hover {
-background-color: #219150;
+  background-color: #219150;
 }
 
 .boki-botones {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
 }
 
 .btn-boki {
-    width: auto;
-    min-width: 150px;
+  width: auto;
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .h1_header {
+    font-size: 30px;
+    height: auto;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .h2_header {
+    font-size: 18px;
+    height: auto;
+    line-height: 1.2;
+  }
+
+
+  .container {
+    width: 80px;
+  }
+
+  .container2 {
+    width: 50px;
+  }
+
+  /* Galería de animales */
+  .animales {
+    font-size: 25px;
+    gap: 15px;
+  }
+
+  /* Formularios */
+  .form-container {
+    padding: 30px;
+    width: 90%;
+    max-width: none;
+  }
+
+  /* Boki y otras páginas individuales */
+  .boki-carousel-img {
+    height: 300px;
+  }
+
+  .textoboki {
+    padding: 0 15px;
+  }
+
+  .tabla td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* Contenedores de dos columnas si los hay */
+  .dosColm {
+    display: flex;
+    flex-direction: column;
+  }
 }
